@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information</title>
+    <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main-header">
+        <div class="container">
+          <h1>The Code Review</h1>
+        </div><!--container-->
+      </header>
+    <div class="container">
+      <div class="call-to-action">
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+
+      <form>
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="newsletter_name" placeholder="Required">
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="newsletter_email" placeholder="Required">
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="newsletter_phone">
+
+          <label for="address">Street Address</label>
+          <input type="text" id="address" name="newsletter_address">
+
+          <label for="city">City</label>
+          <input type="text"  id="city" name="newsletter_city">
+
+          <label for="state">State</label>
+          <select id="state" name="newsletter_state">
+        
+            <option value="" disabled selected>Choose state</option>
+            <optgroup label="Canada">
+              <option value="AB">Alberta</option>
+              <option value="BC">British Columbia</option>
+              <option value="MB">Manitoba</option>
+              <option value="NB">New Brunswick</option>
+              <option value="NL">Newfoundland and Labrador</option>
+              <option value="NS">Nova Scotia</option>
+              <option value="ON">Ontario</option>
+              <option value="PE">Prince Edward Island</option>
+              <option value="QC">Quebec</option>
+              <option value="SK">Saskatchewan</option>
+              <option value="NT">Northwest Territories</option>
+              <option value="NU">Nunavut</option>
+              <option value="YT">Yukon</option>
+            </optgroup>
+
+            <optgroup label="USA">
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">Dist of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </optgroup>
+          </select>
+
+          <label for="zip_code">Zip Code</label>
+          <input type="text" id="zip_code" name="newsletter_zip">
+
+        </fieldset>
+        <fieldset>
+        <legend>Optional Information</legend>
+          <label for="birthday">Birthday</label>
+          <select id="birthday" name="birthday_date">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+          </select>
+          <select id="birthday_month" name="birthday_month">
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
+            <option>Apr</option>
+            <option>May</option>
+            <option>Jun</option>
+            <option>Jul</option>
+            <option>Aug</option>
+            <option>Sep</option>
+            <option>Oct</option>
+            <option>Nov</option>
+            <option>Dec</option>
+          </select>
+
+
+          <label>Gender</label>
+
+          <input type="radio" id="gender_male" value="male" name="option_gender"><label for="gender_male" class="light">Male</label><br>
+
+          <input type="radio" id="gender_female" value="female" name="option_gender"><label for="gender_female" class="light">Female</label><br>
+
+          <input type="radio" id="gender_undefined" value="undefined" name="option_gender"><label for="gender_undefined" class="light">Undefined</label>
+
+
+        </fieldset>
+        <fieldset>
+          <legend>Newsletter</legend>
+
+          <label>Select the newsletters you would like to recieve</label>
+          <input type="checkbox" id="html_news" value="html_news" name="html_news"><label for="type_news" class="light">HTML News</label><br>
+
+          <input type="checkbox" id="css_news" value="css_news" name="css_news"><label for="type_news" class="light">CSS News</label><br>
+
+          <input type="checkbox" id="javascript_news" value="javascript_news" name="type_news"><label for="javascript_news" class="light">Javascript News</label>
+
+          
+          <label>Newsletter format</label>
+          
+          <input type="radio" id="format_html" value="format_html" name="newsletter_format"><label for="format_html" class="light">HTML</label><br>
+          
+          <input type="radio" id="format_plain_text" value="format_plain_text" name="newsletter_format"><label for="format_plain_text" class="light">Plain text</label>
+
+
+          <label for="suggestions">Other topics you'd like to hear about</label>
+          <textarea id="suggestion" name="newsletter_suggestions"></textarea>
+
+          <button type="submit">Sign Up</button>
+
+        </fieldset>
+      </form>
+
+      </div><!--container-->
+
+
+    <!--This table was added to the design so I could practice creating and styling tables.-->
+      <div class="container">
+      <table>
+        <caption>Newsletter Contributers</caption>
+        <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">E-email</th>
+        </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="2">If you would like to be a contributer to the newsletter send a e-mail to John Johnson at johnson@codereview.com.</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <th scope="row">John Johnson</th>
+            <td>johnson@codereview.com</td>
+          </tr>
+          <tr>
+            <th scope="row">Simon Montgomery</th>
+            <td>montgomery@codereview.com</td>
+          </tr>
+          <tr>
+            <th scope="row">Jill Ompont</th>
+            <td>ompont@codereview.com</td>
+          </tr>
+        </tbody>
+    	</table>
+      </div><!--container-->
+      <footer>
+        <p>Copyright The Code Review</p>
+      </footer>
+    </div><!--wrapper-->
+  </body>
+  </html>
