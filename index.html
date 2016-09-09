@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-       <div class="wrapper">
+    <div class="wrapper">
       <header class="main-header">
         <div class="container">
           <h1>The Code Review</h1>
@@ -28,13 +28,13 @@
           <legend>Contact Information</legend>
 
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="newsletter_name" placeholder="Required">
+          <input type="text" id="name" name="newsletter_name" placeholder="Required" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname">
 
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="newsletter_email" placeholder="Required">
+          <input type="email" id="email" name="newsletter_email" placeholder="Required" required>
 
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="newsletter_phone">
+          <input type="tel" id="phone" name="newsletter_phone" pattern="^\d{3}-\d{3}-\d{4}$" title="xxx-xxx-xxxx">
 
           <label for="address">Street Address</label>
           <input type="text" id="address" name="newsletter_address">
@@ -202,7 +202,7 @@
 
 
           <label for="suggestions">Other topics you'd like to hear about</label>
-          <textarea id="suggestion" name="newsletter_suggestions"></textarea>
+          <textarea id="suggestions" name="newsletter_suggestions"></textarea>
 
           <button type="submit">Sign Up</button>
 
