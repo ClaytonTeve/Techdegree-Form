@@ -14,6 +14,7 @@
 body {
 	font-family: 'Crimson Text', serif;
 	background: #fff;
+	color: green;
 
 }
 
@@ -29,6 +30,245 @@ h1 {
 
 /************************************
 BASE STYLES
+************************************/
+
+.main-header,
+.call-to-action,
+footer {
+	text-align: center;
+}
+
+.main-header {
+	background-color: lightgreen;
+	color: #fff;
+	padding: 10px 0px;
+	text-transform: uppercase;
+	font-size: .85em;
+}
+
+.call-to-action {
+	border-bottom: 4px solid green;
+}
+
+.call-to-action h2 {
+	margin-bottom: 0;
+}
+
+.call-to-action p {
+	margin: 0 0 25px 0;
+}
+
+footer {
+	font-style: italic;
+	color: #949494;
+}
+
+.container {
+	width: 92%;
+	margin: 0 auto;
+}
+
+
+/************************************
+Form Styles
+************************************/
+
+form {
+  	margin: 3px auto;
+  	border-radius: 8px;
+}
+
+
+fieldset {
+	width: 100%;
+	border: none;
+	border-style: none;
+	padding: 0;
+  	margin-bottom: 30px;
+}
+
+legend {
+	border-top: 2px solid green;
+	margin: 0 0 0 -2px;
+	padding-top: 30px;
+ 	width: 100%;
+ 	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.15em;
+  color: green;
+}
+
+/* Helper class for checkbox and radio elements. */
+
+label.light {
+  font-weight: 400;
+  display: inline;
+  line-height: 1.5em;
+
+}
+
+.light + label {
+	margin-top: 30px;
+}
+
+/*Placeholder text formating for the first name and email form feilds.*/
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ 	font-size: 1em;
+ 	font-style: italic;
+ 	text-align: right;
+ 	padding-right: 30px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	font-size: 1em;
+ 	font-style: italic;
+ 	text-align: right;
+ 	padding-right: 30px;
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+ 	font-size: 1em;
+ 	font-style: italic;
+ 	text-align: right;
+ 	padding-right: 30px;
+}
+:-moz-placeholder { /* Firefox 18- */
+ 	font-size: 1em;
+ 	font-style: italic;
+ 	text-align: right;
+ 	padding-right: 30px;
+}
+
+/* Basic styles for input feilds. */
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 45px;
+  margin: 0;
+  outline: 0;
+  padding: 0 15px;
+  width: 100%;
+  background-color: #edffed;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+/* Positioning off the screen to the left
+hides browser default checkbox. 
+This allows tabbed browsing while 
+using display: hide; does not. */
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+  display: inline-block;
+  position: absolute;  
+  left: -9999px;
+}
+
+/* CSS only solution for custom radios and checkboxes. */
+
+
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+  content: '';
+  display: inline-block;
+  padding: .35em;
+  margin-right: 8px;
+  border: 2px solid green;
+  border-radius: 3px;
+  transition: background-color .2s;
+
+}
+
+input[type="radio"]:checked + label:before,
+input[type="checkbox"]:checked + label:before {
+  	background-color: lightgreen;
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+	/*font-weight: bold;*/
+	color: #004400;
+} 
+
+
+input[type="radio"] + label:before {
+  border-radius: 100px;
+
+}
+
+input[name="newsletter_zip"] {
+	width: 160px;
+}
+
+select[name="birthday_date"],
+select[name="birthday_month"] {
+	width: 75px;
+	padding: 0 0 0 15px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: lightgreen;
+  font-size: 18px;
+  text-align: center;
+  font-style: bold;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid green;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+textarea {
+	height: 100px;
+	padding: 6px 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	background-color: #ffffff;
+    border: 2px solid green;
+   	transition: all .2s;
+}
+
+
+
+input[type="radio"]:focus + label,
+input[type="checkbox"]:focus + label {
+	background-color: #eee;
+	padding: 4px 10px;
+	margin-left: -10px;
+	border-radius: 5px;
+}
+
+/************************************
+Tabel Styles
 ************************************/
 
 table {
@@ -62,172 +302,63 @@ tfoot td {
 	padding: 8px 10px;
 }
 
-.main-header,
-.call-to-action,
-footer {
-	text-align: center;
-}
-
-.main-header {
-	background-color: #444;
-	color: #fff;
-	padding: 10px 0px;
-	text-transform: uppercase;
-	font-size: .85em;
-}
-
-.call-to-action {
-	border-bottom: 4px solid #000;
-}
-
-.call-to-action h2 {
-	margin-bottom: 0;
-}
-
-.call-to-action p {
-	margin: 0 0 25px 0;
-}
-
-footer {
-	font-style: italic;
-	color: #949494;
-}
-
-
-/************************************
-Layout Styles
-************************************/
-
-.container {
-	width: 92%;
-	margin: 0 auto;
-}
-
-label {
-	display: block;
-}
-
-fieldset {
-	width: 100%;
-	border: none;
-	border-style: none;
-	padding: 0;
-}
-
-form {
-  margin: 3px auto;
-  border-radius: 8px;
-}
-
-legend {
-		border-top: 2px solid #000;
-		margin: 0 0 0 -2px;
-		padding-top: 30px;
-		padding-bottom: 20px;
-		width: 100%;
-
-}
-
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-textarea,
-select {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  height: 45px;
-  margin: 0;
-  outline: 0;
-  padding: 0 15px;
-  width: 100%;
-  background-color: #e8eeef;
-  color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
-}
-
-input[name="newsletter_zip"] {
-	width: 160px;
-}
-
-select[name="birthday_date"],
-select[name="birthday_month"] {
-	width: 20%;
-	padding: 0 0 0 15px;
-}
-
-button {
-  padding: 19px 39px 18px 39px;
-  color: #FFF;
-  background-color: #4bc970;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-  margin-bottom: 10px;
-}
-
-fieldset {
-  margin-bottom: 30px;
-  border: none;
-}
-
-legend {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: light;
-  color: #666;
-}
-
-label.light {
-  font-weight: 300;
-  display: inline;
-}
-
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
- 	font-size: 1em;
- 	font-style: italic;
- 	text-align: right;
- 	padding-right: 30px;
-}
-::-moz-placeholder { /* Firefox 19+ */
-
-}
-:-ms-input-placeholder { /* IE 10+ */
- 
-}
-:-moz-placeholder { /* Firefox 18- */
- 	
-}
-}
 
 @media screen and (min-width: 480px) {
 
-  form {
-  }
+	body {
+		background: url('../img/background.svg');
+	}
+
+	.wrapper {
+		background-color: white;
+		max-width: 480px;
+		margin: 0 auto;
+		height: 100%;
+		-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,10,0.5);
+		moz-box-shadow: 0px 0px 30px 5px rgba(0,0,10,0.5);
+		box-shadow: 0px 0px 30px 5px rgba(0,0,10,0.5);
+	}
+
+	label[for="birthday"] {
+  	display: inline-block;
+  	margin-right: 15px;
+  	}
+
+}
+
+
+@media screen and (min-width: 760px) {
+
+	.wrapper {
+		max-width: 760px;
+	}
+
+
+	legend {
+		margin-bottom: 30px;
+	}
+
+  	fieldset:first-child > label {
+  	display: inline-block;
+  	width: 25%;
+  	}
+
+  	
+
+	  input[type="text"],
+	input[type="password"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="time"],
+	input[type="url"],
+	select {
+		display: inline-block;
+	  	width: 74%;
+	}
 
 }
 
